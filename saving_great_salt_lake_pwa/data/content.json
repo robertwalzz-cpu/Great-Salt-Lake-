@@ -1,0 +1,94 @@
+{
+  "appName": "Saving The Great Salt Lake",
+  "mission": "Mobilize awareness and action to protect the Great Salt Lake\u2014showcasing research, stories, and simple steps students can take right now.",
+  "hero": "With federal protection and funding, the lake can avoid further degradation and pollution. Your voice matters.",
+  "posts": [
+    {
+      "id": "p1",
+      "title": "Why National Park Designation?",
+      "body": "National Park status can unlock federal protection, funding, and long\u2011term stewardship. This app shares research and actions you can take to support the cause.",
+      "tags": [
+        "policy",
+        "overview"
+      ],
+      "source": {
+        "title": "Your white paper / brief",
+        "link": "#add-a-link"
+      }
+    },
+    {
+      "id": "p2",
+      "title": "Ecology & Communities",
+      "body": "The lake supports unique ecosystems and nearby communities. Your content here can outline current challenges and proposed solutions.",
+      "tags": [
+        "ecology",
+        "communities"
+      ],
+      "source": {
+        "title": "Insert source",
+        "link": "#add-a-link"
+      }
+    },
+    {
+      "id": "p3",
+      "title": "Tourism & Education",
+      "body": "A National Park can create educational experiences and responsible recreation. Add facts, visuals, and quotes from experts here.",
+      "tags": [
+        "tourism",
+        "education"
+      ],
+      "source": {
+        "title": "Insert source",
+        "link": "#add-a-link"
+      }
+    }
+  ],
+  "stories": [
+    {
+      "id": "s1",
+      "title": "Interview Highlight",
+      "body": "\u201cI grew up near the lake\u2014watching it change made me want to act.\u201d \u2014 Replace with a real interview quote.",
+      "credit": "Name, Role/Affiliation"
+    },
+    {
+      "id": "s2",
+      "title": "Community Voice",
+      "body": "\u201cFederal designation would help coordinate resources and long\u2011term planning.\u201d \u2014 Replace with stakeholder insight.",
+      "credit": "Name, Organization"
+    }
+  ],
+  "actions": [
+    {
+      "id": "a1",
+      "title": "Sign the Pledge",
+      "body": "Add your name to support National Park designation for the Great Salt Lake. (You can link to a petition page.)",
+      "points": 5,
+      "type": "log"
+    },
+    {
+      "id": "a2",
+      "title": "Email Your Representative",
+      "body": "Use our template to email your representative in support of National Park designation.",
+      "points": 10,
+      "type": "email"
+    },
+    {
+      "id": "a3",
+      "title": "Share the Campaign",
+      "body": "Invite a friend or share the web app link on social media.",
+      "points": 5,
+      "type": "share"
+    },
+    {
+      "id": "a4",
+      "title": "Learn the Issues",
+      "body": "Read two posts in the Learn tab to understand the case for protection.",
+      "points": 5,
+      "type": "log"
+    }
+  ],
+  "letterTemplate": {
+    "subject": "Support National Park designation for the Great Salt Lake",
+    "body": "Dear Representative/Official,\n\nI am writing to express my support for designating the Great Salt Lake as a National Park. Federal protection and funding would help safeguard this unique ecosystem, protect public health, and ensure responsible access for education and recreation. Please champion the studies, legislation, and interagency coordination required to move this forward.\n\nThank you for your leadership.\n\nSincerely,\n[Your Name]\n[City, State]"
+  }
+}
