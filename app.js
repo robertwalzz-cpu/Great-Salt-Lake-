@@ -1,6 +1,5 @@
 
 const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>Array.from(e.querySelectorAll(s));
-
 const state={data:null,points:0,streak:0,lastCheckIn:null,completed:{},displayName:null,reads:0};
 
 function save(){localStorage.setItem('sgsl_state',JSON.stringify({points:state.points,streak:state.streak,lastCheckIn:state.lastCheckIn,completed:state.completed,displayName:state.displayName,reads:state.reads}))}
@@ -22,6 +21,7 @@ function navTo(v){$$('nav button').forEach(b=>b.classList.toggle('active',b.data
 
 function renderHome(root){
   const d=state.data;
+
   // HERO (optional)
   if(d.home && d.home.hero && d.home.hero.image){
     const h=d.home.hero;
@@ -36,6 +36,25 @@ function renderHome(root){
       ${h.credit?`<div class="credit">${h.credit}</div>`:''}
     `;
     root.appendChild(hero);
+  }
+
+  // HOME VIDEO (optional)
+  if(d.home && d.home.video && d.home.video.src){
+    const v=d.home.video;
+    let player='';
+    if(v.type==='youtube'){
+      const embed = toYouTubeEmbed(v.src);
+      player = `<div class="responsive-video"><iframe src="${embed}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+    } else {
+      const poster = v.poster ? ` poster="${v.poster}"` : '';
+      const autoplay = v.autoplay ? ' autoplay' : '';
+      const muted = v.muted ? ' muted' : '';
+      const loop = v.loop ? ' loop' : '';
+      const captions = (v.captions||[]).map(c=>`<track kind="captions" src="${c.src}" srclang="${c.lang||'en'}" label="${c.label||'Captions'}"${c.default?' default':''}>`).join('');
+      player = `<div class="responsive-video"><video controls playsinline${poster}${autoplay}${muted}${loop}><source src="${v.src}" type="video/mp4">${captions}Sorry, your browser doesn’t support embedded videos.</video></div>`;
+    }
+    const meta = v.credit ? `<div class="credit">${v.credit}</div>` : '';
+    root.appendChild(card('Featured Video', `<h3>${v.title||'Watch'}</h3>${player}${meta}<p>${v.description||''}</p>`));
   }
 
   // Mission card
@@ -117,7 +136,7 @@ function renderWatch(root){
     } else {
       const poster = v.poster ? ` poster="${v.poster}"` : '';
       const captions = (v.captions||[]).map(c=>`<track kind="captions" src="${c.src}" srclang="${c.lang||'en'}" label="${c.label||'Captions'}"${c.default?' default':''}>`).join('');
-      player = `<div class="responsive"><video controls${poster}><source src="${v.src}" type="video/mp4">${captions}Sorry, your browser doesn’t support embedded videos.</video></div>`;
+      player = `<div class="responsive"><video controls playsinline${poster}><source src="${v.src}" type="video/mp4">${captions}Sorry, your browser doesn’t support embedded videos.</video></div>`;
     }
     const credit = v.credit ? `<div class="credit">${v.credit}</div>` : '';
     root.appendChild(card('Watch', `<h3>${v.title}</h3>${player}${credit}<p>${v.description||''}</p>`));
