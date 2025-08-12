@@ -1,1 +1,14 @@
+"home": {
+  "video": {
+    "type": "mp4",
+    "src": "assets/video/my_trailer.mp4",
+    "poster": "assets/img/hero.jpg",
+    "autoplay": false,
+    "muted": false,
+    "loop": false,
+    "title": "Saving The Great Salt Lake — Trailer",
+    "description": "30-second overview of the campaign.",
+    "credit": "© Your Name / Org"
+  }
+}
 
