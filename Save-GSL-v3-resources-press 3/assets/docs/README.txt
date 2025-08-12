@@ -1,0 +1,1 @@
+Place your PDF slides and press releases here, then reference them in data/content.json (slides[].src/link, press[].src/link).
