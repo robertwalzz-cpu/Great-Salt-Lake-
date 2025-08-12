@@ -1,3 +1,17 @@
+"home": {
+  "hero": {
+    "image": "assets/img/hero.jpg",
+    "alt": "Great Salt Lake from the shoreline",
+    "credit": "Photo © Your Name",
+    "overlayTitle": "Saving The Great Salt Lake",
+    "overlaySubtitle": "Awareness → Action → Protection"
+  },
+  "gallery": [
+    {"src": "assets/img/birds.jpg", "alt": "Migrating birds over the lake", "credit": "© Your Name"},
+    {"src": "assets/img/sunset.jpg", "alt": "Sunset over Antelope Island", "credit": "© Your Name"},
+    {"src": "assets/img/shoreline.jpg", "alt": "Shoreline textures", "credit": "© Your Name"}
+  ]
+}
 {
   "appName": "Saving The Great Salt Lake",
   "mission": "Mobilize awareness and action to protect the Great Salt Lake\u2014showcasing research, stories, and simple steps students can take right now.",
