@@ -1,3 +1,12 @@
+"home": {
+  "video": {
+    "type": "youtube",
+    "src": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+    "title": "Saving The Great Salt Lake — Trailer",
+    "description": "30-second overview of the campaign.",
+    "credit": "© Your Name / Org"
+  }
+}
 
 "home": {
   "hero": {
