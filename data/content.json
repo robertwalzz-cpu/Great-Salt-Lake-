@@ -1,21 +1,60 @@
 {
   "appName": "Saving The Great Salt Lake",
-  "mission": "Mobilize awareness and action to protect the Great Salt Lake—showcasing research, stories, and simple steps students can take right now.",
+  "mission": "Mobilize awareness and action to protect the Great Salt Lake\u2014showcasing research, stories, and simple steps students can take right now.",
   "hero": "With federal protection and funding, the lake can avoid further degradation and pollution. Your voice matters.",
   "posts": [
     {
       "id": "p1",
-      "title": "Welcome",
-      "body": "Thanks for supporting protection for the Great Salt Lake. Use the Actions tab to email leaders, learn key facts, and share the app.",
+      "title": "Why National Park Designation?",
+      "body": "Short overview. Replace me with your real content in data/content.json.",
+      "tags": [
+        "policy"
+      ],
       "image": "",
       "alt": "",
-      "source": { "title": "", "link": "#" }
+      "source": {
+        "title": "Add a source",
+        "link": "#"
+      }
+    }
+  ],
+  "stories": [
+    {
+      "id": "s1",
+      "title": "Example quote",
+      "body": "\u201cReplace me with a real story.\u201d",
+      "credit": "Name"
     }
   ],
   "actions": [
-    { "id": "a1", "title": "Sign & Share the Pledge", "body": "Add your name; share the app with 2 friends.", "points": 5, "type": "share" },
-    { "id": "a2", "title": "Email Your Representative", "body": "Use the template to email your rep in support of designation.", "points": 10, "type": "email" },
-    { "id": "a3", "title": "Attend a Local Meeting", "body": "Speak during public comment; ask to prioritize inflows to GSL.", "points": 10, "type": "log" }
+    {
+      "id": "a1",
+      "title": "Sign & Share the Pledge",
+      "body": "Add your name; share the app with 2 friends.",
+      "points": 5,
+      "type": "share"
+    },
+    {
+      "id": "a2",
+      "title": "Email Your Representative",
+      "body": "Use the template to email your rep in support of designation.",
+      "points": 10,
+      "type": "email"
+    },
+    {
+      "id": "a3",
+      "title": "Attend a Local Meeting",
+      "body": "Speak during public comment; ask to prioritize inflows to Great Salt Lake.",
+      "points": 10,
+      "type": "log"
+    },
+    {
+      "id": "a4",
+      "title": "Learn & Teach",
+      "body": "Read two posts and explain one fact to a friend.",
+      "points": 5,
+      "type": "log"
+    }
   ],
   "letterTemplate": {
     "subject": "Support National Park designation for the Great Salt Lake",
@@ -24,14 +63,72 @@
   "videos": [
     {
       "id": "v1",
-      "title": "Saving The Great Salt Lake — Campaign Trailer",
+      "title": "Campaign Trailer",
       "type": "youtube",
-      "src":"https://youtu.be/JJDCGoBUHlY",
-      "description": "Why Save the Great Salt Lake? With Paul Cox.",
-      "credit": "© Your Name / Organization"
+      "src": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "description": "Replace with your YouTube link.",
+      "credit": "\u00a9 You / Partners"
     }
   ],
-  "slides": [],
-  "press": [],
-  "stories": []
+  "slides": [
+    {
+      "id": "s1",
+      "title": "Keynote deck (Drive preview)",
+      "type": "gdrive",
+      "src": "https://drive.google.com/file/d/FILE_ID/preview",
+      "link": "https://drive.google.com/file/d/FILE_ID/view?usp=sharing",
+      "description": "Replace FILE_ID with the long ID from your Drive share link. Drive can preview Keynote; for best compatibility, export to PDF and use type:'pdf'.",
+      "credit": "\u00a9 You"
+    },
+    {
+      "id": "s2",
+      "title": "Slides (PDF version)",
+      "type": "pdf",
+      "src": "assets/docs/your-slides.pdf",
+      "link": "assets/docs/your-slides.pdf",
+      "description": "Upload your PDF to assets/docs/ and set this path. PDF embeds well everywhere.",
+      "credit": "\u00a9 You"
+    },
+    {
+      "id": "s3",
+      "title": "Google Slides (preview)",
+      "type": "gslides",
+      "src": "https://docs.google.com/presentation/d/SLIDES_ID/preview",
+      "link": "https://docs.google.com/presentation/d/SLIDES_ID/edit?usp=sharing",
+      "description": "If you convert your deck to Google Slides, use /preview for embedding.",
+      "credit": "\u00a9 You"
+    }
+  ],
+  "press": [
+    {
+      "id": "pr1",
+      "title": "News Release: Campaign Launch",
+      "date": "2025-08-15",
+      "audience": "Media",
+      "summary": "Announcing the 'Saving The Great Salt Lake' campaign to advocate for federal designation and long-term protection.",
+      "type": "gdoc",
+      "src": "https://docs.google.com/document/d/DOC_ID/preview",
+      "link": "https://docs.google.com/document/d/DOC_ID/edit?usp=sharing"
+    },
+    {
+      "id": "pr2",
+      "title": "Advisory: Volunteer Day at the Lake",
+      "date": "2025-09-10",
+      "audience": "Public",
+      "summary": "Join partners for shoreline cleanup and citizen science activities.",
+      "type": "gdrive",
+      "src": "https://drive.google.com/file/d/FILE_ID/preview",
+      "link": "https://drive.google.com/file/d/FILE_ID/view?usp=sharing"
+    },
+    {
+      "id": "pr3",
+      "title": "Release (PDF hosted here)",
+      "date": "2025-09-20",
+      "audience": "Media",
+      "summary": "Upload a PDF to assets/docs and link it here.",
+      "type": "pdf",
+      "src": "assets/docs/news-release.pdf",
+      "link": "assets/docs/news-release.pdf"
+    }
+  ]
 }
