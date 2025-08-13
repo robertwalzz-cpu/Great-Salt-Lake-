@@ -1,4 +1,18 @@
 "home": {
+  "hero": {
+    "image": "assets/img/hero.jpg",
+    "alt": "Great Salt Lake shoreline at dusk",
+    "credit": "Photo © You",
+    "overlayTitle": "Saving The Great Salt Lake",
+    "overlaySubtitle": "Awareness → Action → Protection"
+  },
+  "gallery": [
+    { "src": "assets/img/birds.jpg", "alt": "Migrating birds", "credit": "© You" },
+    { "src": "assets/img/sunset.jpg", "alt": "Sunset over the lake", "credit": "© You" }
+  ]
+}
+
+"home": {
   "video": {
     "type": "youtube",
     "src": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
