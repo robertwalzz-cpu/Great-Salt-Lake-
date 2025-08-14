@@ -1,3 +1,41 @@
+{
+  "appName": "Saving The Great Salt Lake",
+  "mission": "Mobilize awareness and action to protect the Great Salt Lake.",
+  "hero": "Your voice matters.",
+  "posts": [
+    {
+      "id": "welcome",
+      "title": "Welcome",
+      "body": "Thanks for supporting protection for the Great Salt Lake. Use the Actions tab to email leaders, learn key facts, and share the app.",
+      "image": "assets/img/hero.jpg",
+      "alt": "Great Salt Lake shoreline",
+      "imageCredit": "Photo © You",
+      "source": { "title": "", "link": "#" }
+    }
+  ],
+  "actions": [
+    { "id": "a1", "title": "Sign & Share the Pledge", "body": "Add your name; share the app with 2 friends.", "points": 5, "type": "share" },
+    { "id": "a2", "title": "Email Your Representative", "body": "Use the template to email your rep in support of designation.", "points": 10, "type": "email" }
+  ],
+  "letterTemplate": {
+    "subject": "Support National Park designation for the Great Salt Lake",
+    "body": "Dear Representative/Official,\n\nI support designating the Great Salt Lake as a National Park...\n\nSincerely,\n[Your Name]\n[City, State]"
+  },
+  "videos": [
+    {
+      "id": "v1",
+      "title": "Saving The Great Salt Lake — Trailer",
+      "type": "youtube",
+      "src": "https://www.youtube.com/watch?v=JJDCGoBUHlY",
+      "description": "",
+      "credit": ""
+    }
+  ],
+  "slides": [],
+  "press": [],
+  "stories": []
+}
+
 "image": "assets/img/hero.jpg",
 "alt": "Great Salt Lake shoreline",
 "imageCredit": "Photo © Your Name"
